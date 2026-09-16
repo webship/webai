@@ -18,6 +18,7 @@ install:
   - ai_provider_xai
   - ai_provider_huggingface
   - ai_provider_ollama
+  - ai_provider_mistral
 config:
   strict: false
   import:
