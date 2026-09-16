@@ -17,6 +17,7 @@ install:
   - gemini_provider
   - ai_provider_xai
   - ai_provider_huggingface
+  - ai_provider_ollama
 config:
   strict: false
   import:

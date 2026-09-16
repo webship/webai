@@ -33,6 +33,7 @@
     "drupal/gemini_provider": "^1.0",
     "drupal/ai_provider_xai": "^1.0@alpha",
     "drupal/ai_provider_huggingface": "^1.0@rc",
+    "drupal/ai_provider_ollama": "^1.2@rc",
     "drupal/display_builder_ai": "^1.0@dev",
     "drupal/ai_penpot": "^1.0@alpha",
     "drupal/ai_playwright": "^1.0@alpha"
