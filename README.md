@@ -17,13 +17,14 @@ suggestions and logging), plus
 [AI Agents](https://www.drupal.org/project/ai_agents) and
 [AI Image Alt Text](https://www.drupal.org/project/ai_image_alt_text).
 
-It installs five providers:
+It installs six providers:
 
 - [Anthropic](https://www.drupal.org/project/ai_provider_anthropic), the default provider
 - [OpenAI](https://www.drupal.org/project/ai_provider_openai)
 - [Gemini](https://www.drupal.org/project/gemini_provider)
 - [xAI](https://www.drupal.org/project/ai_provider_xai), for Grok
 - [Huggingface](https://www.drupal.org/project/ai_provider_huggingface)
+- [Ollama](https://www.drupal.org/project/ai_provider_ollama), for local models
 
 Anthropic is set as the default provider for chat, vision, tools, complex JSON
 and structured responses.
