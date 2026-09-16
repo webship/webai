@@ -1,0 +1,46 @@
+name: Web AI - Default
+description: A recipe to manage default installed modules, configs and permissions.
+type: install
+install:
+  - key
+  - ai
+  - ai_api_explorer
+  - ai_assistant_api
+  - ai_chatbot
+  - ai_ckeditor
+  - ai_content_suggestions
+  - ai_logging
+  - ai_agents
+  - ai_image_alt_text
+  - ai_provider_anthropic
+  - ai_provider_openai
+  - gemini_provider
+  - ai_provider_xai
+  - ai_provider_huggingface
+config:
+  strict: false
+  import:
+    ai: '*'
+    ai_agents: '*'
+    ai_image_alt_text: '*'
+  actions:
+    # Anthropic is the default provider. Every API key is left unset: keys are
+    # site owner data, added at Configuration > System > Keys after the install.
+    ai.settings:
+      simpleConfigUpdate:
+        default_providers:
+          chat:
+            provider_id: anthropic
+            model_id: claude-sonnet-4-5-20250929
+          chat_with_image_vision:
+            provider_id: anthropic
+            model_id: claude-sonnet-4-5-20250929
+          chat_with_complex_json:
+            provider_id: anthropic
+            model_id: claude-opus-4-5-20251101
+          chat_with_tools:
+            provider_id: anthropic
+            model_id: claude-opus-4-5-20251101
+          chat_with_structured_response:
+            provider_id: anthropic
+            model_id: claude-opus-4-5-20251101
