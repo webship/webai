@@ -1,0 +1,4 @@
+name: Web AI
+description: 'A picked collection of AI tools and providers, with more advanced artificial intelligence options.'
+type: module
+core_version_requirement: ~11.4.0

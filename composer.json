@@ -1,0 +1,28 @@
+{
+  "name": "drupal/webai",
+  "description": "A picked collection of AI tools and providers, with more advanced artificial intelligence options. Part of Webship: the UI Suite UIkit theme (UIkit and HTMX) on top of Drupal and Display Builder.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/webai",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Webship",
+      "homepage": "http://webship.org",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/webai",
+    "source": "http://cgit.drupalcode.org/webai"
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "require": {
+    "drupal/core": "~11.4.0"
+  }
+}
