@@ -19,6 +19,8 @@ install:
   - ai_provider_huggingface
   - ai_provider_ollama
   - ai_provider_mistral
+  # Last, after its dependencies: the Web AI module itself.
+  - webai
 config:
   strict: false
   import:
