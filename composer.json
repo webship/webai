@@ -30,12 +30,14 @@
     "drupal/ai_provider_anthropic": "^1.2",
     "drupal/ai_provider_openai": "^1.2",
     "drupal/gemini_provider": "^1.0",
-    "drupal/ai_provider_xai": "^1.0@alpha",
     "drupal/ai_provider_huggingface": "^1.0@rc",
     "drupal/ai_provider_ollama": "^1.2@rc",
-    "drupal/ai_provider_mistral": "^1.1@rc",
     "drupal/display_builder_ai": "^1.0@dev",
     "drupal/ai_penpot": "^1.0@alpha",
     "drupal/ai_playwright": "^1.0@alpha"
+  },
+  "suggest": {
+    "drupal/ai_provider_mistral": "Mistral provider. Not required: its partitech/php-mistral library needs Symfony 6 or 7, and Drupal 12 uses Symfony 8.",
+    "drupal/ai_provider_xai": "xAI (Grok) provider. Not required: its grok-php/client library needs Guzzle 7, and Drupal 12 uses Guzzle 8."
   }
 }

@@ -17,15 +17,23 @@ suggestions and logging), plus
 [AI Agents](https://www.drupal.org/project/ai_agents) and
 [AI Image Alt Text](https://www.drupal.org/project/ai_image_alt_text).
 
-It installs seven providers:
+It installs five providers:
 
 - [Anthropic](https://www.drupal.org/project/ai_provider_anthropic), the default provider
 - [OpenAI](https://www.drupal.org/project/ai_provider_openai)
 - [Gemini](https://www.drupal.org/project/gemini_provider)
-- [xAI](https://www.drupal.org/project/ai_provider_xai), for Grok
 - [Huggingface](https://www.drupal.org/project/ai_provider_huggingface)
 - [Ollama](https://www.drupal.org/project/ai_provider_ollama), for local models
-- [Mistral](https://www.drupal.org/project/ai_provider_mistral), the EU provider
+
+Two providers are suggested rather than required, because their PHP libraries
+don't support Drupal 12 yet:
+
+- [xAI](https://www.drupal.org/project/ai_provider_xai), for Grok: `grok-php/client` needs Guzzle 7, Drupal 12 uses Guzzle 8.
+- [Mistral](https://www.drupal.org/project/ai_provider_mistral), the EU provider: `partitech/php-mistral` needs Symfony 6 or 7, Drupal 12 uses Symfony 8.
+
+On Drupal 11 add them with `ddev composer require drupal/ai_provider_xai drupal/ai_provider_mistral`.
+A site that already has one enabled should require it in its own `composer.json`
+before updating Web AI.
 
 Anthropic is set as the default provider for chat, vision, tools, complex JSON
 and structured responses.
